@@ -164,7 +164,7 @@ park.edu
 Conclusion
 The field of Computer Science Engineering offers a wide range of career options across various industries. Continuous learning and skill development are essential to stay competitive in this evolving landscape. Graduates should explore their interests and consider internships or projects to gain practical experience in their chosen field
 ### JOBS UNDER IT SECTOR ?
--> PRODUCT BASE 
+#### -> PRODUCT BASE 
 A product-based job in IT refers to positions within companies that focus on developing and selling their own software or technology products. These roles typically include:
 Product Managers: They define the vision and strategy of the product, ensuring it meets user needs and market demands. 
 1
@@ -176,9 +176,9 @@ QA Engineers: They ensure the product's quality and performance, troubleshooting
 1
 
 Product-based companies, such as Google, Microsoft, and Adobe, focus on continuous improvement and innovation, making them attractive for professionals looking to specialize in software development and product management.
--> SERVICE BASE 
+#### -> SERVICE BASE 
 A service-based job in IT typically involves providing expertise and solutions to clients rather than selling products. These roles often focus on client satisfaction and delivering customized services, such as IT consulting, software development, and support. Service-based companies, like TCS and Infosys, rely on a team-oriented approach and may offer more stable employment due to long-term client contracts. In contrast, product-based companies, such as Google and Microsoft, focus on developing and selling their own products, which can lead to higher salaries and more opportunities for innovation.
--> START-UP BASE
+#### -> START-UP BASE
 A startup job in IT typically involves working in a new or growing company that focuses on innovative technology solutions. Here are some key points:
 Job Roles: Common roles include software developers, web developers, data analysts, and project managers. 
 1

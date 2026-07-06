@@ -154,3 +154,170 @@ Networking: Many startups rely on networking to fill roles, making it beneficial
 1
 
 Overall, working in a startup can offer exciting career opportunities with the potential for rapid growth and innovation
+## DAY 2:
+### Shell & BASH
+- **Shell**: Command interpreter between user & OS.  
+- **BASH**: Default Linux shell, supports scripting.  
+  ```bash
+  echo "Hello World"   # Print text
+  ```
+  ###  File System Structure
+- **Root (/)** → Top-level directory.  
+- **/home** → User files.  
+- **/etc** → Config files.  
+- **/var** → Logs, spool, temp data.  
+  ```bash
+  cd /etc   # Change directory to /etc
+  ```
+### File & Directory Permissions
+- **chmod** → Change permissions.  
+  ```bash
+  chmod 755 file.txt   # rwxr-xr-x
+  ```
+- **chown** → Change ownership.  
+  ```bash
+  chown user:group file.txt
+  ```
+  ###  Basic File Operations
+- **ls** → List files.  
+  ```bash
+  ls -l
+  ```
+- **cp** → Copy files.  
+  ```bash
+  cp file1.txt file2.txt
+  ```
+- **mv** → Move/rename.  
+  ```bash
+  mv old.txt new.txt
+  ```
+- **rm** → Remove files.  
+  ```bash
+  rm file.txt
+  ```
+  ###  Redirection & Pipes
+- **>** → Redirect output (overwrite).  
+  ```bash
+  echo "data" > file.txt
+  ```
+- **>>** → Append output.  
+  ```bash
+  echo "more" >> file.txt
+  ```
+- **|** → Pipe output.  
+  ```bash
+  ls -l | grep ".txt"
+  ``
+  ### Wildcards, Quoting & Escaping
+- **Wildcards**:  
+  ```bash
+  ls *.txt   # All .txt files
+  ```
+- **Quoting**:  
+  ```bash
+  echo 'literal $HOME'   # No expansion
+  echo "expand $HOME"    # Expands variable
+  ```
+- **Escaping**:  
+  ```bash
+  echo "Hello \"World\""
+  ```
+## Day 3:-
+Here’s a **proper explanation with structured notes and syntaxes** for your requested topics on **BASH & Linux Command Line Essentials (Installation + Scripting)**:
+
+---
+
+## Linux Installation
+### **Downloading & Verifying ISOs**
+- Linux distributions (Ubuntu, Fedora, Debian, etc.) provide ISO images.  
+- Always download from the **official website**.  
+- Verify integrity using checksums:  
+  ```bash
+  sha256sum ubuntu.iso   # Compare with checksum provided on site
+  ```
+
+### **Installing in Virtual Machine**
+- Use software like **VirtualBox** or **VMware**.  
+- Steps: Create VM → Attach ISO → Boot → Install Linux.  
+- Advantage: Safe testing environment without affecting host OS.
+
+### **Installing on Physical Hardware**
+- Burn ISO to USB/DVD.  
+- Boot system from USB/DVD.  
+- Follow installer: partition disks, set user accounts, install system.  
+- Advantage: Full performance, direct hardware access.
+
+---
+
+## BASH Scripting
+
+### **Writing Simple Scripts**
+- Scripts are text files with commands.  
+- Start with **shebang** (`#!/bin/bash`).  
+- Example:
+  ```bash
+  #!/bin/bash
+  name="Vanshika"
+  echo "Hello $name"
+  ```
+### **Variables**
+- Store values for reuse.  
+  ```bash
+  x=10
+  echo $x
+  ```
+### **Conditionals**
+- Control flow with `if-else`.  
+  ```bash
+  if [ $x -gt 5 ]; then
+    echo "Greater"
+  else
+    echo "Smaller"
+  fi
+  ```
+## Command Help
+### **man**
+- Displays manual pages for commands.  
+  ```bash
+  man ls
+  ```
+### **help**
+- Shows help for built-in shell commands.  
+  ```bash
+  help cd
+  ```
+##  Text Processing Tools
+### **grep**
+- Searches for patterns in text.  
+  ```bash
+  grep "error" logfile.txt
+  ```
+### **awk**
+- Processes text line by line, field by field.  
+  ```bash
+  awk '{print $1}' data.txt   # Print first column
+  ```
+### **sed**
+- Stream editor for substitutions.  
+  ```bash
+  sed 's/old/new/g' file.txt
+  ```
+##  File Compression
+### **tar**
+- Archive multiple files.  
+  ```bash
+  tar -cvf archive.tar file1 file2   # Create archive
+  tar -xvf archive.tar               # Extract archive
+  ```
+### **gzip**
+- Compress single file.  
+  ```bash
+  gzip file.txt
+  gunzip file.txt.gz
+  ```
+### **zip**
+- Compress multiple files into one archive.  
+  ```bash
+  zip archive.zip file1 file2
+  unzip archive.zip
+  ```

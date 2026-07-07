@@ -321,3 +321,23 @@ Here’s a **proper explanation with structured notes and syntaxes** for your re
   zip archive.zip file1 file2
   unzip archive.zip
   ```
+## DAY 4:-
+### Common PC Boot Issues & Solutions
+- **No Power / No Display** → Often caused by faulty PSU, loose cables, or motherboard issues. Solution: check power connections, test PSU, reseat connectors.  
+- **POST Errors / Beep Codes** → Indicate RAM, GPU, or CPU problems. Solution: reseat components, clean dust, check cooling, refer to motherboard manual.  
+- **Boot Device Not Found** → Storage drive failure or wrong BIOS boot order. Solution: verify BIOS settings, reconnect drive, run diagnostics.  
+- **Blue Screen of Death (BSOD)** → Usually due to corrupt OS files or failing RAM/HDD. Solution: boot in Safe Mode, run memory/disk tests, reinstall OS if necessary.  
+## Diagnosing Hardware Failures
+- **RAM** → Symptoms: BSOD, random reboots, freezes. Diagnosis: memory test tools. Solution: reseat or replace faulty modules.  
+- **Hard Drive (HDD/SSD)** → Symptoms: slow performance, clicking sounds, boot errors. Diagnosis: SMART check, disk utilities. Solution: backup data, repair or replace drive.  
+- **GPU** → Symptoms: screen artifacts, crashes, no display. Diagnosis: stress tests, swap with working GPU. Solution: reseat, update drivers, replace if overheating.  
+- **PSU** → Symptoms: system won’t power, random shutdowns, burning smell. Diagnosis: voltage test, PSU tester. Solution: replace with correct wattage unit.  
+### Key Takeaway
+Troubleshooting follows a **step‑by‑step elimination method**:
+1. Start with **power supply** checks.  
+2. Test and reseat **RAM/GPU**.  
+3. Verify **storage health**.  
+4. Inspect **motherboard/CPU** last.  
+
+## DAY 5:-
+### PC HARDWARE TROUBLESHOOTING 

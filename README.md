@@ -3,7 +3,6 @@
 ### NAME-VANSHIKA 
 ### URN- 2514708
 ### GROUP-G10
-## SL IV
 ## DAY1 :-
 ### WHAT DO YOU MEAN BY HACKATHON ?
 -Definition: A hackathon is an event where individuals or teams collaborate intensively over a short period to create software, hardware, or business solutions. 

@@ -157,84 +157,76 @@ Overall, working in a startup can offer exciting career opportunities with the p
 ### Shell & BASH
 - **Shell**: Command interpreter between user & OS.  
 - **BASH**: Default Linux shell, supports scripting.  
-  ```bash
+  
   echo "Hello World"   # Print text
-  ```
+  
   ###  File System Structure
 - **Root (/)** → Top-level directory.  
 - **/home** → User files.  
 - **/etc** → Config files.  
 - **/var** → Logs, spool, temp data.  
-  ```bash
+  
   cd /etc   # Change directory to /etc
-  ```
+  
 ### File & Directory Permissions
 - **chmod** → Change permissions.  
-  ```bash
+SYNTAX:-  
   chmod 755 file.txt   # rwxr-xr-x
-  ```
+  
 - **chown** → Change ownership.  
-  ```bash
+  SYNTAX:-
   chown user:group file.txt
-  ```
+  
   ###  Basic File Operations
 - **ls** → List files.  
-  ```bash
+  SYNTAX:-
   ls -l
-  ```
+  
 - **cp** → Copy files.  
-  ```bash
+  SYNTAX:-
   cp file1.txt file2.txt
-  ```
+
 - **mv** → Move/rename.  
-  ```bash
+ SYNTAX:- 
   mv old.txt new.txt
-  ```
+ 
 - **rm** → Remove files.  
-  ```bash
+ SYNTAX:-
   rm file.txt
-  ```
+ 
   ###  Redirection & Pipes
 - **>** → Redirect output (overwrite).  
-  ```bash
+ SYNTAX:-
   echo "data" > file.txt
-  ```
+ 
 - **>>** → Append output.  
-  ```bash
+  SYNTAX:-
   echo "more" >> file.txt
-  ```
+  
 - **|** → Pipe output.  
-  ```bash
+ SYNTAX:-
   ls -l | grep ".txt"
-  ``
+ 
   ### Wildcards, Quoting & Escaping
 - **Wildcards**:  
-  ```bash
+  SYNTAX:-
   ls *.txt   # All .txt files
-  ```
+  
 - **Quoting**:  
-  ```bash
+ EXAMPLE:-
   echo 'literal $HOME'   # No expansion
   echo "expand $HOME"    # Expands variable
-  ```
+ 
 - **Escaping**:  
-  ```bash
+ EXAMPLE:-
   echo "Hello \"World\""
-  ```
+  
 ## Day 3:-
-Here’s a **proper explanation with structured notes and syntaxes** for your requested topics on **BASH & Linux Command Line Essentials (Installation + Scripting)**:
-
----
-
 ## Linux Installation
 ### **Downloading & Verifying ISOs**
 - Linux distributions (Ubuntu, Fedora, Debian, etc.) provide ISO images.  
 - Always download from the **official website**.  
 - Verify integrity using checksums:  
-  ```bash
-  sha256sum ubuntu.iso   # Compare with checksum provided on site
-  ```
-
 ### **Installing in Virtual Machine**
 - Use software like **VirtualBox** or **VMware**.  
 - Steps: Create VM → Attach ISO → Boot → Install Linux.  
@@ -245,81 +237,77 @@ Here’s a **proper explanation with structured notes and syntaxes** for your re
 - Boot system from USB/DVD.  
 - Follow installer: partition disks, set user accounts, install system.  
 - Advantage: Full performance, direct hardware access.
-
----
-
 ## BASH Scripting
 
 ### **Writing Simple Scripts**
 - Scripts are text files with commands.  
 - Start with **shebang** (`#!/bin/bash`).  
 - Example:
-  ```bash
-  #!/bin/bash
+   #!/bin/bash
   name="Vanshika"
   echo "Hello $name"
-  ```
+  
 ### **Variables**
 - Store values for reuse.  
-  ```bash
+  EXAMPLE :
   x=10
   echo $x
-  ```
+
 ### **Conditionals**
 - Control flow with `if-else`.  
-  ```bash
+ EXAMPLE:-
   if [ $x -gt 5 ]; then
     echo "Greater"
   else
     echo "Smaller"
   fi
-  ```
+  
 ## Command Help
 ### **man**
-- Displays manual pages for commands.  
-  ```bash
+- Displays manual pages for commands.
+ SYNTAX:-
   man ls
-  ```
+  
 ### **help**
 - Shows help for built-in shell commands.  
-  ```bash
+ SYNTAX:-
   help cd
-  ```
+  
 ##  Text Processing Tools
 ### **grep**
 - Searches for patterns in text.  
-  ```bash
+  SYNTAX:-
   grep "error" logfile.txt
-  ```
+  
 ### **awk**
 - Processes text line by line, field by field.  
-  ```bash
+  SYNTAX:-
   awk '{print $1}' data.txt   # Print first column
-  ```
+  
 ### **sed**
 - Stream editor for substitutions.  
-  ```bash
+  SYNTAX:-
   sed 's/old/new/g' file.txt
-  ```
+
 ##  File Compression
 ### **tar**
 - Archive multiple files.  
-  ```bash
+  SYNTAX:-
   tar -cvf archive.tar file1 file2   # Create archive
   tar -xvf archive.tar               # Extract archive
-  ```
+  
 ### **gzip**
 - Compress single file.  
-  ```bash
+  SYNTAX:-
   gzip file.txt
   gunzip file.txt.gz
-  ```
+  
 ### **zip**
 - Compress multiple files into one archive.  
-  ```bash
+  SYNTAX:-
   zip archive.zip file1 file2
   unzip archive.zip
-  ```
+  
 ## DAY 4:-
 ### Common PC Boot Issues & Solutions
 - **No Power / No Display** → Often caused by faulty PSU, loose cables, or motherboard issues. Solution: check power connections, test PSU, reseat connectors.  
